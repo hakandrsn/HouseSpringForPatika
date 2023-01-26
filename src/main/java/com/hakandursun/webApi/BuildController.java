@@ -18,6 +18,7 @@ public class BuildController {
     @Autowired
     private BuildService buildService;
 
+    //  http://localhost:8080/api/buildPrice/all
     @GetMapping("/buildPrice/{type}")
     @ResponseBody
     public String getPriceWithType(@PathVariable String type) {
